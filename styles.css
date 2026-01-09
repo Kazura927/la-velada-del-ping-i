@@ -263,8 +263,25 @@ footer p {
   margin: 2rem auto 0 auto;
 }
 
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6); /* mejora lectura */
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.carousel-caption h5 {
+  font-size: 14px;
+}
+
 .carousel-caption p {
+  font-size: 12px;
+  margin-bottom: 0;
   text-shadow: 1px 1px 1px #000;
+}
+
+.carousel-item img {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 /* ================================== 
@@ -279,6 +296,19 @@ footer p {
   .rules-card {
     padding: 1.3rem 1.2rem;
   }
+
+  .carousel-caption {
+    background: none;
+    padding: 0;
+  }
+
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+
+  .carousel-caption p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -286,14 +316,20 @@ footer p {
     display: none;
   }
 
+  .navbar {
+    padding-top: 1rem;
+  }
+
   .navlinks {
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .navlinks a {
-    font-size: 0.8rem
+    font-size: 0.8rem;
+    white-space: nowrap;
   }
 
   .tournament-hero h1 {
@@ -304,6 +340,10 @@ footer p {
     font-size: 1rem;
   }
 
+  .tournament-info h2 {
+    font-size: 1.5rem;
+  }
+
   .tournament-info p {
     font-size: 1rem;
     padding: 0 2rem;
@@ -312,6 +352,10 @@ footer p {
   #carouselExampleCaptions {
     width: 90%;
     padding-top: 5rem;
+  }
+
+  .contact-hero {
+    margin-top: 15rem;
   }
 }
 
