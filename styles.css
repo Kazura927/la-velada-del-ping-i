@@ -267,14 +267,15 @@ footer p {
   background: rgba(0, 0, 0, 0.6); /* mejora lectura */
   padding: 10px;
   border-radius: 6px;
+  margin-bottom: 2rem;
 }
 
 .carousel-caption h5 {
-  font-size: 14px;
+  font-size: 22px;
 }
 
 .carousel-caption p {
-  font-size: 12px;
+  font-size: 16px;
   margin-bottom: 0;
   text-shadow: 1px 1px 1px #000;
 }
