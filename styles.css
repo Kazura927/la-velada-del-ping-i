@@ -358,6 +358,10 @@ footer p {
   .contact-hero {
     margin-top: 15rem;
   }
+
+  .carousel-caption {
+    margin: 0;
+  }
 }
 
 
