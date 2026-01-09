@@ -1,0 +1,319 @@
+/* ================================== 
+                GLOBAL 
+==================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #000;
+  background-size: cover;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 5rem;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-navbar { margin-left: 2rem; }
+
+.logo-navbar a img { width: 4rem; }
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.navlinks li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navlinks li a:hover { color: #ff0000; }
+
+footer {
+  background: #0a0a0a;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ================================== 
+                INDEX
+==================================== */
+
+.tournament-hero {
+  background: url(/img/bg-boxeo.jpg);
+  height: 70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 20%;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.tournament-hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.tournament-hero p {
+  font-size: 1.2rem;
+  margin-top: .5rem;
+  text-shadow: 1px 1px 4px #000;
+  letter-spacing: 3px;
+}
+
+
+.tournament-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6.2rem;
+}
+
+.tournament-info h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+
+.tournament-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 125vh;
+  color: #b3b3b3;
+  margin-block: 1lh;
+  width: 100%;
+  text-align: left;
+}
+
+.tournament-logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+
+.tournament-logo img {
+  width: 15rem;
+}
+
+/* ================================== 
+                RULES
+==================================== */
+
+.rules-hero {
+  margin-top: 8rem;
+  height: 45vh;
+  min-height: 260px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-inline: 1.5rem;
+  background: url(img/bg-boxeo2.jpg);
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.rules-hero__content h1 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 700;
+  text-shadow: 2px 2px 4px #000;
+  margin-bottom: .5rem;
+}
+
+.rules-hero__content p {
+  color: #b3b3b3;
+  font-size: 1rem;
+}
+
+.rules-section {
+  padding: 3.5rem 1.5rem 4rem;
+}
+
+.rules-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.rules-card {
+  background: #080808;
+  border-radius: 18px;
+  padding: 1.6rem 1.8rem;
+  border: 1px solid #222;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+}
+
+.rules-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.rules-card h2::before {
+  content: "";
+  width: 7px;
+  height: 22px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ff4b4b, #2e86ff);
+}
+
+.rules-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  color: #b3b3b3;
+  font-size: 0.98rem;
+}
+
+.rules-card ul li::before {
+  content: "•";
+  color: #ffc857;
+  margin-right: 0.35rem;
+}
+
+.rules-card p {
+  color: #b3b3b3;
+  font-size: 0.98rem;
+}
+
+.rules-card--highlight {
+  border-color: #ffc857;
+  background: linear-gradient(
+      120deg,
+      rgba(255, 200, 87, 0.06),
+      transparent 60%
+    ),
+    #080808;
+}
+
+/* ================================== 
+                CONTACT
+==================================== */
+
+.contact-hero {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+  margin-top: 8rem;
+}
+
+/* ================================== 
+                FIGHTERS
+==================================== */
+
+#carouselExampleCaptions {
+  display: flex;
+  flex-direction: 1;
+  width: 50%;
+  height: auto;
+  margin: 2rem auto 0 auto;
+}
+
+.carousel-caption p {
+  text-shadow: 1px 1px 1px #000;
+}
+
+/* ================================== 
+                MEDIA QUERIES
+==================================== */
+
+@media (max-width: 768px) {
+  .rules-section {
+    padding-inline: 1rem;
+  }
+
+  .rules-card {
+    padding: 1.3rem 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-navbar {
+    display: none;
+  }
+
+  .navlinks {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navlinks a {
+    font-size: 0.8rem
+  }
+
+  .tournament-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .tournament-hero p {
+    font-size: 1rem;
+  }
+
+  .tournament-info p {
+    font-size: 1rem;
+    padding: 0 2rem;
+  }
+
+  #carouselExampleCaptions {
+    width: 90%;
+    padding-top: 5rem;
+  }
+}
+
+
+/*# sourceMappingURL=styles.css.map */
